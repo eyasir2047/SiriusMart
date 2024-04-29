@@ -1,0 +1,20 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 60px auto; /* Centering the breadcrumbs horizontally */
+    max-width: 100%; /* Ensuring the breadcrumbs don't exceed the viewport width */
+    padding: 0 20px; /* Adding padding for smaller screens */
+    text-transform: capitalize;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .breadcrum {
+        margin: 40px auto; /* Decreased margin for smaller screens */
+        font-size: 14px; /* Decreased font size for smaller screens */
+    }
+}

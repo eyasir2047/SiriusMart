@@ -1,0 +1,90 @@
+.loginsignup{
+    width: 100%;
+    height: 100vh; /* Changed to 100vh for full viewport height */
+    background: #05dbe7;
+    padding-top: 100px;
+}
+
+.loginsignup-container{
+    width: 90%; /* Changed to percentage for responsiveness */
+    max-width: 580px; /* Added max-width to ensure it doesn't exceed a certain width */
+    height: auto; /* Changed to auto for dynamic height */
+    background: white;
+    margin: auto;
+    padding:40px 5%; /* Changed to percentage for responsiveness */
+}
+
+.loginsignup-container h1{
+    margin: 20px 0px;
+}
+
+.loginsignup-fields{
+    display: flex;
+    flex-direction: column;
+    gap:20px; /* Decreased gap for smaller screens */
+    margin-top: 30px;
+}
+
+.loginsignup-fields input{
+    height: 50px; /* Decreased height for smaller screens */
+    width: 100%;
+    padding: 0 20px; /* Adjusted padding */
+    border: 1px solid #c9c9c9;
+    outline:none;
+    color:#5c5c5c;
+    font-size: 16px; /* Decreased font size for smaller screens */
+}
+
+.loginsignup-container button{
+   width: 100%;
+   height: 50px; /* Decreased height for smaller screens */
+   color:white;
+   background: #ff4190;
+   margin-top:20px; /* Adjusted margin for smaller screens */
+    border:none;
+    font-size:20px; /* Decreased font size for smaller screens */
+    font-weight: 500 ;
+    cursor: pointer;
+}
+
+.loginsignup-login{
+    margin-top:20px;
+    color:#5c5c5c;
+    font-size: 16px; /* Decreased font size for smaller screens */
+    font-weight: 500;
+}
+.loginsignup-login span{
+    color:#ff4190;
+    font-weight: 600;
+}
+
+.loginsignup-agree{
+    display: flex;
+    flex-direction: column; /* Changed to column layout for smaller screens */
+    align-items: flex-start; /* Changed alignment for smaller screens */
+    margin-top: 15px; /* Decreased margin for smaller screens */
+    gap:10px; /* Decreased gap for smaller screens */
+    color:#5c5c5c;
+    font-size: 16px; /* Decreased font size for smaller screens */
+    font-weight: 500;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .loginsignup-container {
+        padding: 40px 10px; /* Adjusted padding for smaller screens */
+    }
+    .loginsignup-fields input {
+        height: 40px; /* Decreased height for smaller screens */
+        font-size: 14px; /* Decreased font size for smaller screens */
+        width: 90%;
+    }
+    .loginsignup-container button {
+        height: 40px; /* Decreased height for smaller screens */
+        font-size: 18px; /* Decreased font size for smaller screens */
+        margin-top: 15px; /* Adjusted margin for smaller screens */
+    }
+    .loginsignup-agree {
+        font-size: 14px; /* Decreased font size for smaller screens */
+    }
+}

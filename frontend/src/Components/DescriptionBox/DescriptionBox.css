@@ -1,0 +1,75 @@
+.descriptionbox{
+    margin:120px 170px;
+}
+
+.descriptionbox-navigator{
+    display: flex;
+}
+
+.descriptionbox-nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e3e3e;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #e0e0e0;
+}
+
+.descriptionbox-nav-box.fade{
+    background: #f5f5f5;
+    color: #000;
+}
+
+.descriptionbox-description{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    border: 1px solid #d0d0d0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+
+
+/* Media Queries for responsiveness */
+
+/* For desktops */
+@media only screen and (max-width: 1200px) {
+    .descriptionbox {
+        margin: 80px 100px;
+    }
+}
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+    .descriptionbox {
+        margin: 60px 40px;
+    }
+    .descriptionbox-nav-box {
+        width: 140px;
+        height: 60px;
+        font-size: 14px;
+    }
+    .descriptionbox-description {
+        padding: 24px;
+        padding-bottom: 50px;
+    }
+}
+
+/* For phones */
+@media only screen and (max-width: 480px) {
+    .descriptionbox {
+        margin: 40px 20px;
+    }
+    .descriptionbox-nav-box {
+        width: 120px;
+        height: 50px;
+        font-size: 12px;
+    }
+    .descriptionbox-description {
+        padding: 16px;
+        padding-bottom: 30px;
+    }
+}
