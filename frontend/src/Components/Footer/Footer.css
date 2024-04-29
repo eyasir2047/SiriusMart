@@ -1,0 +1,116 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-logo p{
+   color: #383838;
+    font-size: 45px;
+    font-weight: 600; 
+}
+
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #303723;
+}
+
+.footer-links li{
+    cursor: pointer;
+}
+
+.footer-social-icon {
+    display: flex; /* Enable flexbox layout */
+    gap: 35px; /* Adjust gap size as desired */
+  }
+
+.footer-social-icon img {
+    /* Additional styling for icons if needed */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+  }
+  
+
+.footer-copyright{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #303723;
+    font-size: 20px;
+}
+
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    height: 3px;
+    border-radius:10px ;
+    background: #c7c7d7;
+}
+
+
+/* Media Queries for responsiveness */
+
+/* For desktops */
+@media only screen and (max-width: 1200px) {
+    .footer-logo p {
+        font-size: 35px;
+    }
+}
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+    .footer {
+        gap: 30px;
+    }
+    .footer-logo p {
+        font-size: 30px;
+    }
+    .footer-links {
+        gap: 30px;
+    }
+}
+
+/* For phones */
+@media only screen and (max-width: 480px) {
+    .footer {
+        gap: 20px;
+    }
+    .footer-logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-logo p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-links li {
+        text-align: center;
+    }
+    .footer-social-icon {
+        gap: 20px;
+    }
+}
+
+
+
