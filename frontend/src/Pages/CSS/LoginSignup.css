@@ -1,17 +1,16 @@
 .loginsignup{
     width: 100%;
-    height: 100vh; /* Changed to 100vh for full viewport height */
+    height: 80vh;
     background: #05dbe7;
     padding-top: 100px;
 }
 
 .loginsignup-container{
-    width: 90%; /* Changed to percentage for responsiveness */
-    max-width: 580px; /* Added max-width to ensure it doesn't exceed a certain width */
-    height: auto; /* Changed to auto for dynamic height */
+    width:580px;
+    height: 600px;
     background: white;
     margin: auto;
-    padding:40px 5%; /* Changed to percentage for responsiveness */
+    padding:40px 60px;
 }
 
 .loginsignup-container h1{
@@ -21,28 +20,28 @@
 .loginsignup-fields{
     display: flex;
     flex-direction: column;
-    gap:20px; /* Decreased gap for smaller screens */
+    gap:29px;
     margin-top: 30px;
 }
 
 .loginsignup-fields input{
-    height: 50px; /* Decreased height for smaller screens */
+    height: 72px;
     width: 100%;
-    padding: 0 20px; /* Adjusted padding */
+    padding-left:20px;
     border: 1px solid #c9c9c9;
     outline:none;
     color:#5c5c5c;
-    font-size: 16px; /* Decreased font size for smaller screens */
+    font-size: 18px;
 }
 
 .loginsignup-container button{
-   width: 100%;
-   height: 50px; /* Decreased height for smaller screens */
+   width:580px;
+   height:72px;
    color:white;
    background: #ff4190;
-   margin-top:20px; /* Adjusted margin for smaller screens */
+   margin-top:30px;
     border:none;
-    font-size:20px; /* Decreased font size for smaller screens */
+    font-size:24px;
     font-weight: 500 ;
     cursor: pointer;
 }
@@ -50,8 +49,9 @@
 .loginsignup-login{
     margin-top:20px;
     color:#5c5c5c;
-    font-size: 16px; /* Decreased font size for smaller screens */
+    font-size: 18px;
     font-weight: 500;
+
 }
 .loginsignup-login span{
     color:#ff4190;
@@ -60,15 +60,13 @@
 
 .loginsignup-agree{
     display: flex;
-    flex-direction: column; /* Changed to column layout for smaller screens */
-    align-items: flex-start; /* Changed alignment for smaller screens */
-    margin-top: 15px; /* Decreased margin for smaller screens */
-    gap:10px; /* Decreased gap for smaller screens */
+    align-items: center;
+    margin-top: 25px;
+    gap:20px;
     color:#5c5c5c;
-    font-size: 16px; /* Decreased font size for smaller screens */
+    font-size: 18px;
     font-weight: 500;
 }
-
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     .loginsignup-container {
