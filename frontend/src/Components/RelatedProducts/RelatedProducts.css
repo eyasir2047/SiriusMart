@@ -22,7 +22,7 @@
 .relatedproducts-item{
     margin-top: 50px;
     display: flex;
-    gap:30px;
+    /* gap:30px; */
 }
 
 /* Media queries for responsiveness */

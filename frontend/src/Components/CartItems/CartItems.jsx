@@ -3,9 +3,30 @@ import './CartItems.css'
 import { useContext } from 'react';
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const CartItems = () => {
   const {getTotalCartAmount,all_product,cartItems,removeFromCart} = useContext(ShopContext);
+
+  const [promoCode, setPromoCode] = useState('');
+    const [discount, setDiscount] = useState(0);
+
+    const handleApplyPromo = () => {
+      // Check if the promo code is valid
+      if (promoCode === 'csedu27' || promoCode === '27') {
+          // Apply 10% discount
+          setDiscount(10);
+          // You can add further logic here, like applying the discount to the cart total
+          // For example: applyDiscountToCartTotal(10);
+      } else {
+          // Reset discount if promo code is not valid
+          setDiscount(0);
+          alert('Invalid promo code');
+      }
+  };
+
   return (
     <div className='cartitems'>
       <div className="cartitems-format-main">
@@ -56,23 +77,30 @@ const CartItems = () => {
             <hr/>
 
             <div className="cartitems-total-item">
-            <h3>Total</h3>
-            <h3>৳{getTotalCartAmount()}</h3>
-
-              </div>
+                      <h3>Total</h3>
+                     <h3>৳{getTotalCartAmount() - (getTotalCartAmount() * discount) / 100}</h3>
+             </div>
 
           </div>
 
-          <button>PROCEED TO CHECKOUT</button>
+          <Link to="/shippingInfo">
+            <button>PROCEED TO CHECKOUT</button>
+          </Link>
         </div>
 
         <div className="cartitems-promocode">
-          <p>If you are a promo code, Enter it here</p>
-          <div className="cartitems-promobox">
-            <input type="text" placeholder='Enter your code'/>
-            <button>Apply</button>
-          </div>
-        </div>
+                    <p>If you have a promo code, enter it here</p>
+                    <div className="cartitems-promobox">
+                        <input
+                            type="text"
+                            placeholder="Enter your code"
+                            value={promoCode}
+                            onChange={(e) => setPromoCode(e.target.value)}
+                        />
+                        <button onClick={handleApplyPromo}>Apply</button>
+                    </div>
+                    {discount > 0 && <p>{discount}% discount applied!</p>}
+                </div>
       </div>
     </div>
   )

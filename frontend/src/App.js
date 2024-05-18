@@ -7,13 +7,19 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
+import ShippingInfo from './Pages/ShippingInfo';
 import Footer from './Components/Footer/Footer';
-import men_banner from "./Components/Assets/banner_mens.png";
-import women_banner from "./Components/Assets/banner_women.png";
-import kid_banner from "./Components/Assets/banner_kids.png";
+import men_banner from "./Components/Assets/sale_m.png";
+import women_banner from "./Components/Assets/sale_w.png";
+import kid_banner from "./Components/Assets/sale_k.png";
 
 
+  /* <Route path='/signup' element={<LoginSignup />} /> */
 
+/**
+ * Renders the main application component.
+ * @returns {JSX.Element} The rendered application component.
+ */
 function App() {
   return (
     <div >
@@ -21,7 +27,6 @@ function App() {
 
       <Navbar />
       
-
       <Routes>
         <Route path='/' element={<Shop />} />
         <Route path='/mens' element={<ShopCategory banner={men_banner}  category="mens"/>} />
@@ -34,6 +39,9 @@ function App() {
 
         <Route path='/cart' element={<Cart />} /> 
         <Route path='/login' element={<LoginSignup />} /> 
+        <Route path='/shippingInfo' element={<ShippingInfo/>} />
+
+    
 
       </Routes>
       <Footer/>
