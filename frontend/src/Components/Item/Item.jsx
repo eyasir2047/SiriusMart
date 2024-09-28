@@ -6,7 +6,13 @@ import { Link } from 'react-router-dom'
 const item = (props) => {
   return (
     <div className='item'>
-      <Link to={`/product/${props.id}`}><img onClick={window.scrollTo(0,0)} src={props.image} alt='' /></Link>
+      <Link to={`/product/${props.id}`}>
+      <img
+          src={props.image}
+          alt={props.name}
+          onClick={props.onClick}  // Pass the onClick function as a prop and use it here
+        />
+      </Link>
       <p>{props.name}</p>
       <div className="item-prices">
 

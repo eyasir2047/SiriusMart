@@ -54,7 +54,7 @@ let all_product = [
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Lee Women's Ultra Lux Comfort with Flex Hoodie",
     category: "womens",
     image: p3_img,
     new_price: 600.0,
@@ -62,7 +62,7 @@ let all_product = [
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "GRACE KARIN Women's Gorgeous Pencil Dress Cap Sleeve Tweed ",
     category: "womens",
     image: p4_img,
     new_price: 1000.0,
@@ -118,7 +118,7 @@ let all_product = [
   },
   {
     id: 11,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women's 2 Piece Office Lady Business Suit Set Slim Fit Blazer Pant",
     category: "womens",
     image: p11_img,
     new_price: 1850.0,

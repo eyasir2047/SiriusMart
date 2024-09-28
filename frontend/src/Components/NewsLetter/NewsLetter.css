@@ -7,18 +7,18 @@
     justify-content: center;
     margin: auto;
     padding: 0px 140px;
-    background: linear-gradient(#05dbe7 0%,#e1ffea22);
+    background: #490303;
     gap: 30px;
 }
 
 .newsletter h1{
-    color: #000;
+    color: #ffffff;
    font-size: 55px;
     font-weight: 600;
 }
 
 .newsletter p{
-    color: #000;
+    color:rgb(204, 202, 202);
     font-size: 20px;
 }
 
@@ -46,12 +46,14 @@
     width: 210px;
     height: 70px;
     border-radius: 80px;
-    background: #151313;
+    background: #490303;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
 }
-
+.newsletter div button:hover{
+    background: #660909;
+}
 /* Media queries for responsiveness */
 @media screen and (max-width: 1200px) {
     .newsletter {

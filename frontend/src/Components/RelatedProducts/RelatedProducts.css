@@ -1,10 +1,41 @@
+
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .product-item {
+    display: inline-block; /* Keep items in a single line */
+    margin-right: 16px; /* Optional: Add space between items */
+  }
+  
+
 .relatedproducts{
     display:flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
     height: 90vh;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;
+    padding-bottom: 1rem; /* Adds some space between content and footer */
+  }
 
 .relatedproducts h1{
     color:#171717;
@@ -22,7 +53,7 @@
 .relatedproducts-item{
     margin-top: 50px;
     display: flex;
-    gap:30px;
+    /* gap:30px; */
 }
 
 /* Media queries for responsiveness */

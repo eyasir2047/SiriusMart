@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './NewCollections.css'
-import new_collection from '../Assets/new_collections'
+
 import Item from '../Item/Item'
 
 const NewCollections = () => {
+
+  const [new_collection,setNew_collection] = useState([]);
+
+  useEffect(()=>{
+    fetch("http://localhost:4000/newcollections")
+    .then((res)=>res.json())
+    .then((data)=>setNew_collection(data));
+  },[])
+
+  const handleItemClick = () => {
+    window.scrollTo(0, 0);  // Scroll to the top of the page
+  };
+
+
   return (
     <div className='new-collections'>
       <h1>NEW COLLECTIONS</h1>
@@ -11,7 +25,8 @@ const NewCollections = () => {
         <div className="collections">
         {new_collection.map((item,i) => {
 
-        return <Item key={i} id={item.id} name={item.name} image={item.image}  new_price={item.new_price} old_price={item.old_price} />
+        return <Item key={i} id={item.id} name={item.name} image={item.image}  new_price={item.new_price} 
+        old_price={item.old_price}  onClick={handleItemClick}/>
             
         })}
         </div>

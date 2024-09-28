@@ -1,0 +1,57 @@
+/* ShippingInfo.css */
+
+
+/* ShippingInfo.css */
+
+/* Style for the h2 heading */
+.shipping-heading {
+    color: #333; /* Example color */
+    font-size: 36px; /* Example font size */
+    text-align: center; /* Example alignment */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    margin-top: 20px;
+  }
+  
+/* Style for the form container */
+.shipping-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for form labels */
+  .shipping-form label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Style for form inputs */
+  .shipping-form input[type="text"],
+  .shipping-form input[type="tel"],
+  .shipping-form input[type="email"],
+  .shipping-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  /* Style for submit button */
+  .shipping-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for submit button on hover */
+  .shipping-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  

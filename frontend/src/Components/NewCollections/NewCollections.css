@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 /* Media queries for responsiveness */
@@ -37,7 +37,7 @@
 @media screen and (max-width: 768px) {
     .collections {
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        /* gap: 20px; */
     }
 }
 
@@ -53,7 +53,7 @@
 
     .collections {
         grid-template-columns: 1fr;
-        gap: 15px;
+        /* gap: 15px; */
     }
 }
 

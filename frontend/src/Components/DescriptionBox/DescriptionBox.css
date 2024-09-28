@@ -1,3 +1,10 @@
+.beautiful-text {
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Add some top margin */
+    font-size: 24px; /* Font size */
+    color: #3c09e2; /* Text color */
+    font-weight: bold; /* Bold font weight */
+}
 .descriptionbox{
     margin:120px 170px;
 }

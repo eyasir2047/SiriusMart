@@ -7,13 +7,22 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
+import ShippingInfo from './Pages/ShippingInfo';
 import Footer from './Components/Footer/Footer';
-import men_banner from "./Components/Assets/banner_mens.png";
-import women_banner from "./Components/Assets/banner_women.png";
-import kid_banner from "./Components/Assets/banner_kids.png";
+import men_banner from "./Components/Assets/sale_m.png";
+import women_banner from "./Components/Assets/sale_w.png";
+import kid_banner from "./Components/Assets/sale_k.png";
+import PaymentSuccess from './Components/PaymentSucess/PaymentSuccess';
+import PaymentFail from './Components/PaymentFail/PaymentFail';
+import RelatedProducts from './Components/RelatedProducts/RelatedProducts';
 
 
+  /* <Route path='/signup' element={<LoginSignup />} /> */
 
+/**
+ * Renders the main application component.
+ * @returns {JSX.Element} The rendered application component.
+ */
 function App() {
   return (
     <div >
@@ -21,19 +30,24 @@ function App() {
 
       <Navbar />
       
-
       <Routes>
         <Route path='/' element={<Shop />} />
         <Route path='/mens' element={<ShopCategory banner={men_banner}  category="mens"/>} />
         <Route path='/womens' element={<ShopCategory banner={women_banner} category="womens"  />} />
         <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kids"/>} />
 
-        <Route path="/product" element={<Product />} >
+       { /*<Route path="/product" element={<Product />} >
         <Route path=":productId" element={<Product />} />
-        </Route>
+        </Route>*/}
+        <Route path="/product/:productId" element={<Product />} />
 
         <Route path='/cart' element={<Cart />} /> 
         <Route path='/login' element={<LoginSignup />} /> 
+        <Route path='/shippingInfo' element={<ShippingInfo/>} />
+        <Route path='/payment/success' element={<PaymentSuccess/>} />
+        <Route path='/payment/fail' element={<PaymentFail/>} />
+       
+
 
       </Routes>
       <Footer/>
